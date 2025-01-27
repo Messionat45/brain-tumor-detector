@@ -28,17 +28,17 @@ app.post('/api/login',(req, res) => {
     const { username, password}  = req.body;
 
     if(!username || !password){
-        return res.status(400).json({message: "PLZ FILL ALL FIRLEDS BRO TO LOGIN"});
+        return res.status(400).json({message: "PLZ FILL ALL FIELDS  TO LOGIN"});
     }
 
     const user = users.find(u => u.username === username && u.password === password);
 
     if(user){
-        // json is used to send the message to front end in son format to stadardised api
-        res.status(200).json({message: "succesfully logged in bro"});
+        // json is used to send the message to front end in son format 
+        res.status(200).json({message: "succesfully logged"});
     }
     else{
-      res.status(400).json({message: "wrong credebnntial ta  login"});
+      res.status(400).json({message: "wrong credebnntial"});
     }
 });
 
@@ -54,5 +54,5 @@ app.get('/api/display/', (req,res)=> {
 
 
 app.listen(port,()=> {
-    console.log(`server running on httips kkk  port ${port}`);
+    console.log(`server running on https  port ${port}`);
 })

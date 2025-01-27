@@ -1,20 +1,25 @@
 # Brain Tumour Detection and Screening using AI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Install Node JS. [click here](https://www.geeksforgeeks.org/install-node-js-on-windows/) \
+2. clone the repo.
 
-## Available Scripts
+## How To Run the project
 
-In the project directory, you can run:
+for `frontend` navigate to frontend folder and paste `npm install` in terminal.\
+this will install all the required dependencies for frontend.\
 
-### `npm start`
+for `backend` navigate to backend folder and paste `npm install` in terminal.\
+this will install all the required dependencies for backend.\
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Runs the app in the development mode.\
 
-### `npm test`
+1. Navigate to `frontend` folder and type `npm start` in terminal.\
+2. open another terminal.\
+3. Navigate to `backend` folder and type `node server.js` in terminal. or type `nodemon server.js`, it auto-restarts when files changes.
+
+
+<!-- ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
@@ -67,4 +72,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
