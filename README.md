@@ -14,9 +14,9 @@ this will install all the required dependencies for backend.
 
 ### Runs the app in the development mode.
 
-1. Navigate to `frontend` folder and type `npm start` in terminal.
-2. open another terminal.
-3. Navigate to `backend` folder and type `node server.js` in terminal. or type `nodemon server.js`, it auto-restarts when files changes.
+1. Navigate to `frontend` folder and type `npm start` in Command Prompt.
+2. open another Command Prompt.
+3. Navigate to `backend` folder and type `node server.js` in Command Prompt. or type `nodemon server.js`, it auto-restarts when files changes.
 
 
 #### ``Thanks me later Shubham and Rudresh.``
