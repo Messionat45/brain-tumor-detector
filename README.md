@@ -1,6 +1,6 @@
 # Brain Tumour Detection and Screening using AI
 
-1. Install Node JS. [click here](https://www.geeksforgeeks.org/install-node-js-on-windows/) 
+1. Install Node JS, [click here](https://www.geeksforgeeks.org/install-node-js-on-windows/).
 2. clone the repo.
 
 ## How To Run the project
