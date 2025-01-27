@@ -1,22 +1,25 @@
 # Brain Tumour Detection and Screening using AI
 
-1. Install Node JS. [click here](https://www.geeksforgeeks.org/install-node-js-on-windows/) \
+1. Install Node JS. [click here](https://www.geeksforgeeks.org/install-node-js-on-windows/) 
 2. clone the repo.
 
 ## How To Run the project
 
-for `frontend` navigate to frontend folder and paste `npm install` in terminal.\
-this will install all the required dependencies for frontend.\
+for `frontend` navigate to frontend folder and paste `npm install` in terminal.
+this will install all the required dependencies for frontend.
 
-for `backend` navigate to backend folder and paste `npm install` in terminal.\
-this will install all the required dependencies for backend.\
+for `backend` navigate to backend folder and paste `npm install` in terminal.
+this will install all the required dependencies for backend.
 
 
-### Runs the app in the development mode.\
+### Runs the app in the development mode.
 
-1. Navigate to `frontend` folder and type `npm start` in terminal.\
-2. open another terminal.\
+1. Navigate to `frontend` folder and type `npm start` in terminal.
+2. open another terminal.
 3. Navigate to `backend` folder and type `node server.js` in terminal. or type `nodemon server.js`, it auto-restarts when files changes.
+
+
+#### ``Thanks me later Shubham and Rudresh.``
 
 
 <!-- ### `npm test`
