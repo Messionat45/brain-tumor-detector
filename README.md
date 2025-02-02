@@ -22,6 +22,10 @@ this will install all the required dependencies for backend.
 #### ``Thanks me later Shubham and Rudresh.``
 
 
+
+#### Note
+ U may get some error due to some dependencies, ask chat gpt to get the exact command to install them or contact me.
+
 <!-- ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
