@@ -1,7 +1,7 @@
 /node_modules
 flask-server/models/resnet50_trained_model.h5
 # Ignore model files
-/models
+# /models
 
 # Ignore virtual environments
 venv/
