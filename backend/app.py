@@ -3,6 +3,7 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image
 from flask_cors import CORS
+from tensorflow.keras.applications.resnet50 import preprocess_input  # ✅ Add this
 
 import io
 
@@ -13,7 +14,7 @@ CORS(app)  # Enable CORS for all routes
 model = tf.keras.models.load_model("models/resnet50_trained_model.h5")
 
 # Define class labels
-CLASS_LABELS = ['No Tumor', 'Pituitary', 'Meningioma', 'Glioma']
+CLASS_LABELS = ['Glioma','Meningioma','No Tumor', 'Pituitary' ]
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -27,8 +28,11 @@ def predict():
         # Load and preprocess image
         image = Image.open(image_file).convert("RGB")
         image = image.resize((224, 224))
-        image_array = np.array(image) / 255.0
+        image_array = np.array(image)
         image_array = np.expand_dims(image_array, axis=0)
+
+        # ✅ Correct preprocessing
+        image_array = preprocess_input(image_array)
 
         # Make prediction
         predictions = model.predict(image_array)
