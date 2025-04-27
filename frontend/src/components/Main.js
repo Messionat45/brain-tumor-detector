@@ -5,7 +5,9 @@ import { Button, TomatoButton } from "./StyleComponent";
 
 const BASE_URL = process.env.REACT_APP_BASE_URL;
 
-const flask_port = process.env.FLASK_APP_BASE_URL;
+const FLASK_URL = process.env.REACT_APP_PREDICT_URL;
+
+console.log(FLASK_URL);
 
 const Main = () => {
   const [userList, setuserList] = useState([]);
@@ -46,7 +48,7 @@ const Main = () => {
 
     try {
       // const response = await axios.post("http://localhost:5000/api/upload-image", formData, { //when testing just image uploads fro front end or not
-      const response = await axios.post(`${flask_port}/predict`, formData, {
+      const response = await axios.post(`${FLASK_URL}/predict`, formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

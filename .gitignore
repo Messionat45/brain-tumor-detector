@@ -1,1 +1,36 @@
 .env
+# Node.js dependencies
+/node_modules
+
+# Python virtual environment (if used for Flask server)
+venv/
+
+# Ignore build directories
+/build
+/coverage
+
+# Ignore .env files (for both backend and frontend)
+.env
+backend/.env
+flask-server/.env
+frontend/.env
+
+# Ignore model files (e.g., trained models for Flask)
+flask-server/models/*.h5
+backend/models/*.h5
+
+# Ignore uploads folder (for file uploads)
+uploads/
+
+# Ignore logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore IDE and editor specific files
+.DS_Store
+.idea/
+.vscode/
+
+# Ignore other OS-specific files
+Thumbs.db
