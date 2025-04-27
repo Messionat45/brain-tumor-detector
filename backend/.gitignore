@@ -12,4 +12,3 @@ uploads/
 .env
 backend/.env
 flask-server/.env
-frontend/.env
