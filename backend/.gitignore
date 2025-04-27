@@ -5,4 +5,11 @@ flask-server/models/resnet50_trained_model.h5
 
 # Ignore virtual environments
 venv/
-.env/
+build/
+uploads/
+
+# Ignore .env files
+.env
+backend/.env
+flask-server/.env
+frontend/.env

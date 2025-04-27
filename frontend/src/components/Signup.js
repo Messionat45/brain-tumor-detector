@@ -12,6 +12,8 @@ import { Button } from "./StyleComponent";
 
 const BASE_URL = process.env.REACT_APP_BASE_URL;
 
+const PREDICT_URL = process.env.REACT_APP_PREDICT_URL;
+
 const Signup = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");

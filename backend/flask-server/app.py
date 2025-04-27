@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+import os
+
 from flask import Flask, request, jsonify
 import tensorflow as tf
 import numpy as np
@@ -6,6 +9,9 @@ from flask_cors import CORS
 from tensorflow.keras.applications.resnet50 import preprocess_input  # ✅ Add this
 
 import io
+
+
+load_dotenv()
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
@@ -48,4 +54,5 @@ def predict():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(port=5001, debug=True)
+  port = int(os.environ.get("FLASK_PORT", 5001))  # fallback to 5001 locally
+  app.run(host="0.0.0.0", port=port, debug=True)
