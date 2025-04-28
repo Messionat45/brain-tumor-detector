@@ -14,7 +14,8 @@ import io
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app, origins=["https://brain-tumor-detector-be.onrender.com"])  # Enable CORS for all routes
+CORS(app)
+# CORS(app, origins=["https://brain-tumor-detector-be.onrender.com"])  # Enable CORS for all routes
 
 model_path = os.getenv("MODEL_PATH")  # ✅
 # Load the trained model
@@ -46,6 +47,10 @@ def predict():
         predicted_class = np.argmax(predictions)
         confidence = float(predictions[0][predicted_class])
 
+        # Print the result to the console
+        print(f"Prediction: {CLASS_LABELS[predicted_class]}, Confidence: {confidence * 100:.2f}%")
+
+
         return jsonify({
             "class": CLASS_LABELS[predicted_class],
             "confidence": confidence
@@ -57,5 +62,5 @@ def predict():
 if __name__ == '__main__':
   port = int(os.environ.get("PORT", 5001))  # Render will set PORT, local fallback 5001
 
-#   port = int(os.environ.get("PORT", 5001)) for local running  # fallback to 5001 locally
+  #port = int(os.environ.get("PORT", 5001)) #for local running  # fallback to 5001 locally
   app.run(host="0.0.0.0", port=port, debug=True)
