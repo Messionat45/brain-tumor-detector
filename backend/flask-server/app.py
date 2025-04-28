@@ -14,7 +14,7 @@ import io
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+CORS(app, origins=["https://brain-tumor-detector-be.onrender.com"])  # Enable CORS for all routes
 
 model_path = os.getenv("MODEL_PATH")  # ✅
 # Load the trained model
