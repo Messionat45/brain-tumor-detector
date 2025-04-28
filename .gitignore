@@ -16,8 +16,8 @@ flask-server/.env
 frontend/.env
 
 # Ignore model files (e.g., trained models for Flask)
-flask-server/models/*.h5
-backend/models/*.h5
+# flask-server/models/*.h5
+# backend/models/*.h5
 
 # Ignore uploads folder (for file uploads)
 uploads/
