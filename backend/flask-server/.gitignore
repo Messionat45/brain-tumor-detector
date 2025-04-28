@@ -2,7 +2,7 @@
 .env
 
 # Ignore models if you have large model files
-models/*.h5
+# models/*.h5
 
 # Ignore virtual environment
 venv/
