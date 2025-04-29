@@ -1,27 +1,35 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-// Define the Button styled component
+// Unified theme colors
+const primaryColor = "#1565c0"; // Deep Blue
+const secondaryColor = "#e3f2fd"; // Light Blue
+const accentColor = "#1976d2"; // Slightly brighter blue
+const neutralText = "#333";
+
+// General Button
 export const Button = styled.button`
-  /* Adapt the colors based on the $primary prop */
-  background: ${(props) => (props.$primary ? '#BF4F74' : 'white')};
-  color: ${(props) => (props.$primary ? 'white' : '#BF4F74')};
+  background: ${(props) => (props.$primary ? primaryColor : "white")};
+  color: ${(props) => (props.$primary ? "white" : primaryColor)};
   font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border: 2px solid #BF4F74;
-  border-radius: 3px;
+  margin: 0.5em;
+  padding: 0.5em 1.5em;
+  border: 2px solid ${primaryColor};
+  border-radius: 5px;
   cursor: pointer;
+  transition: all 0.3s ease;
 
   &:hover {
-    opacity: 0.9;
+    background: ${(props) => (props.$primary ? "#0d47a1" : secondaryColor)};
   }
 `;
 
-
-
-// A new component based on Button, but with some override styles
+// Optional secondary button if needed
 export const TomatoButton = styled(Button)`
-  color: purple;
-  background: pink;
-  border-color: purple;
+  background: ${accentColor};
+  color: white;
+  border-color: ${accentColor};
+
+  &:hover {
+    background: #0d47a1;
+  }
 `;
